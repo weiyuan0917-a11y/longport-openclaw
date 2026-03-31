@@ -1,4 +1,4 @@
-# LongPort OpenClaw (Open Source Edition)
+# LongPort(长桥证券） OpenClaw (Open Source Edition)
 
 一个面向 US/HK/CN 市场的量化研究与交易控制台。  
 支持市场分析、策略回测、自动交易、通知与配置管理。
