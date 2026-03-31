@@ -1,0 +1,39 @@
+{
+  "enabled": false,
+  "market": "us",
+  "active_template": "defensive",
+  "pair_mode": false,
+  "interval_seconds": 300,
+  "top_n": 8,
+  "kline": "1d",
+  "backtest_days": 180,
+  "signal_bars_days": 80,
+  "order_quantity": 100,
+  "dry_run_mode": true,
+  "entry_rule": "strategy_cross",
+  "breakout_lookback_bars": 20,
+  "breakout_volume_ratio": 1.2,
+  "mean_reversion_rsi_threshold": 35.0,
+  "mean_reversion_deviation_pct": 2.0,
+  "exit_rules": ["hard_stop", "time_stop", "strategy_sell", "take_profit"],
+  "rule_priority": ["hard_stop", "time_stop", "strategy_sell", "take_profit"],
+  "hard_stop_pct": 3.0,
+  "take_profit_pct": 10.0,
+  "time_stop_hours": 48,
+  "sizer": {
+    "type": "volatility",
+    "quantity": 100,
+    "risk_pct": 0.008,
+    "target_vol_pct": 0.012
+  },
+  "cost_model": { "commission_bps": 3, "slippage_bps": 5 },
+  "auto_execute": false,
+  "auto_sell_enabled": false,
+  "strategies": ["ma_cross", "rsi", "macd"],
+  "pair_pool": { "us": {}, "hk": {}, "cn": {} },
+  "universe": {
+    "us": ["AAPL.US", "MSFT.US"],
+    "hk": [],
+    "cn": []
+  }
+}

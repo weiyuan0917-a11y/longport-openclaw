@@ -1,0 +1,44 @@
+{
+  "feishu_app": {
+    "app_id": "请填写或设置环境变量 FEISHU_APP_ID",
+    "app_secret": "请填写或设置环境变量 FEISHU_APP_SECRET",
+    "scheduled_chat_id": "可选，定时推送目标群 open_chat_id，或环境变量 FEISHU_SCHEDULED_CHAT_ID"
+  },
+  "feishu_bots": [
+    {
+      "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/你的UUID",
+      "secret": "机器人签名校验密钥，勿提交真实值"
+    }
+  ],
+  "dingtalk_bots": [
+    {
+      "webhook_url": "https://oapi.dingtalk.com/robot/send?access_token=你的token",
+      "secret": "可选，加签 secret"
+    }
+  ],
+  "notification_preferences": {
+    "scheduled_market_report": { "enabled": true },
+    "semi_auto_pending_signal": { "enabled": true },
+    "full_auto_execution": { "enabled": true, "notify_on_failure": true },
+    "observer_mode_digest": { "enabled": true },
+    "bottom_reversal_watch": {
+      "enabled": false,
+      "symbols": [],
+      "poll_interval_seconds": 300,
+      "only_on_edge": true,
+      "cooldown_minutes": 120
+    },
+    "feishu_builtin_reversal_monitor": {
+      "enabled": false,
+      "selection_mode": "multi",
+      "selected_conditions": [
+        "rsi_rebound",
+        "macd_bullish_cross_below_zero",
+        "bollinger_rebound",
+        "hammer_candle",
+        "volume_rebound",
+        "ma5_cross_ma20"
+      ]
+    }
+  }
+}

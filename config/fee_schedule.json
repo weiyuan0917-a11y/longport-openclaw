@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "hk_stock": {
+    "commission": {
+      "enabled": false,
+      "rate_pct": 0.03,
+      "min_per_order": 3.1
+    },
+    "platform_fee": {
+      "type": "fixed_per_order",
+      "amount": 15
+    },
+    "stamp_duty": {
+      "type": "pct_of_notional",
+      "rate_pct": 0.1,
+      "applies_to": "both"
+    },
+    "trading_fee": {
+      "type": "pct_of_notional",
+      "rate_pct": 0.00565,
+      "min_per_order": 0.01
+    },
+    "sfc_levy": {
+      "type": "pct_of_notional",
+      "rate_pct": 0.0027,
+      "min_per_order": 0.01
+    },
+    "afrc_levy": {
+      "type": "pct_of_notional",
+      "rate_pct": 0.00015,
+      "min_per_order": 0.01
+    },
+    "ccass_fee": {
+      "type": "pct_of_notional",
+      "rate_pct": 0.0042
+    }
+  },
+  "us_stock": {
+    "platform_fee": {
+      "type": "per_share",
+      "amount_per_share": 0.005,
+      "min_per_order": 1,
+      "max_pct_of_notional": 0.99
+    },
+    "settlement_fee": {
+      "type": "per_share",
+      "amount_per_share": 0.003,
+      "max_pct_of_notional": 7
+    },
+    "sec_fee": {
+      "type": "per_order",
+      "amount": 0.0,
+      "applies_to": "sell"
+    },
+    "taf": {
+      "type": "per_share",
+      "amount_per_share": 0.000195,
+      "min_per_order": 0.01,
+      "max_per_order": 9.79,
+      "applies_to": "sell"
+    }
+  },
+  "us_option_regular": {
+    "commission": {
+      "type": "per_contract",
+      "amount_per_contract": 0.45,
+      "min_per_order": 1.49,
+      "applies_to": "both"
+    },
+    "platform_fee": {
+      "type": "per_contract",
+      "amount_per_contract": 0.3,
+      "min_per_order": 0.3,
+      "applies_to": "both"
+    },
+    "option_settlement_fee": {
+      "type": "per_contract",
+      "amount_per_contract": 0.18,
+      "applies_to": "both"
+    },
+    "option_regulatory_fee": {
+      "type": "per_contract",
+      "amount_per_contract": 0.02295,
+      "applies_to": "both"
+    },
+    "option_clearing_fee": {
+      "type": "per_contract",
+      "amount_per_contract": 0.025,
+      "applies_to": "both"
+    },
+    "option_taf": {
+      "type": "per_contract",
+      "amount_per_contract": 0.00329,
+      "min_per_order": 0.01,
+      "applies_to": "sell"
+    },
+    "exercise_assignment_fee": {
+      "type": "unknown",
+      "amount": null
+    }
+  }
+}

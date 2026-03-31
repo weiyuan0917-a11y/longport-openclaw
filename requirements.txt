@@ -1,0 +1,24 @@
+# Project dependencies
+
+# MCP SDK
+mcp
+
+# LongPort SDK
+longport
+
+# Data processing
+numpy
+pandas
+scikit-learn
+
+# HTTP requests
+requests
+
+# Feishu SDK
+lark-oapi
+
+# UI API
+fastapi
+uvicorn
+
+# Other

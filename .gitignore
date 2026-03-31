@@ -1,0 +1,57 @@
+# --- 密钥与本地配置（切勿提交）---
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# 飞书/钉钉 Webhook 与 App Secret（用 notification_config.example.json 复制后填写）
+mcp_server/notification_config.json
+
+# 自动交易实盘相关配置（标的池、风控参数等，用 auto_trader_config.example.json 复制）
+api/auto_trader_config.json
+api/auto_trader_config.backups.json
+
+# 可选：仅本地覆盖（若你使用此命名约定）
+**/notification_config.local.json
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / Next.js ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- 运行时状态（含 pid，可能暴露路径习惯）---
+*.pid
+.auto_trader_worker.runtime.json
+.auto_trader_worker.trigger_scan
+.auto_trader_signals.json
+.auto_trader_worker.confirm_signals.json
+.auto_trader_supervisor.*
+.notification_bottom_reversal_state.json
+.notification_bottom_reversal_state.json.tmp
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# --- 构建产物 ---
+dist/
+build/
+*.spec.bak
+
+# --- 运行日志（脚本 Tee 输出）---
+logs/*.log
