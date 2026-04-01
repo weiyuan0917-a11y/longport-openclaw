@@ -1,12 +1,16 @@
-# LongPort（长桥证券）—OpenClaw (Open Source Edition)
+
+# LongPort(长桥证券） OpenClaw (Open Source Edition)
+
 
 目前针对长桥证券面向 US/HK/CN 市场的量化研究与交易控制台。  
 支持市场分析、策略回测、自动交易、通知与配置管理。
 
 ##它支持两种使用方式：
 
-可视化 UI 模式：在网页中完成配置、分析、回测、信号扫描、下单、通知管理
-智能体 MCP 模式：让 OpenClaw/Claude 等智能体通过 MCP 工具调用交易能力
+
+- **可视化 UI 模式**：在网页中完成配置、分析、回测、信号扫描、下单、通知管理
+- **智能体 MCP 模式**：让 OpenClaw/Claude 等智能体通过 MCP 工具调用交易能力
+
 
 > Warning: 本项目为研究与工程框架，不构成投资建议。
 
@@ -190,4 +194,10 @@ npm run dev
 ---
 ## 联系方式
 - 邮箱：weiyuan_917@qq.com
+<<<<<<< HEAD
 -
+=======
+- 微信&QQ（仅合作沟通，支持定制服务）：178522360
+
+
+>>>>>>> cfb67f6faddc520dda31fb15ad21a763a3913e60
