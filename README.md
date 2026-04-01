@@ -1,11 +1,11 @@
 
-# LongPort(长桥证券） OpenClaw (Open Source Edition)
+# LongPort（长桥证券）OpenClaw（Open Source Edition）
 
 
 目前针对长桥证券面向 US/HK/CN 市场的量化研究与交易控制台。  
 支持市场分析、策略回测、自动交易、通知与配置管理。
 
-##它支持两种使用方式：
+## 支持两种使用方式
 
 
 - **可视化 UI 模式**：在网页中完成配置、分析、回测、信号扫描、下单、通知管理
@@ -175,26 +175,37 @@ npm run dev
 - [LongPort OpenAPI](https://open.longportapp.com/)
 - [Model Context Protocol](https://github.com/modelcontextprotocol)
 
-- ## 项目截图
-> 界面会随版本迭代，截图仅供参考。
+## 项目截图
+
+> 界面会随版本迭代，截图仅供参考。  
+> 如未显示，请先将图片放到 `docs/images/`（见 `docs/images/README.md`）。
+
 ![总览 Dashboard](./docs/images/dashboard.png)
 ![市场分析](./docs/images/market-analysis.png)
 ![自动交易 AutoTrader](./docs/images/auto-trader.png)
-![自动交易 AutoTrader](./docs/images/Backtest.png)
-![自动交易 AutoTrader](./docs/images/Options.png)
-![自动交易 AutoTrader](./docs/images/Research.png)
+![回测 Backtest](./docs/images/backtest.png)
+![期权 Options](./docs/images/options.png)
+![研究中心 Research](./docs/images/research.png)
+
 ---
+
 ## 社区与支持
-- 问题反馈（Issues）：https://github.com/weiyuan0917-a11y/longport-openclaw/issues
-- 交流讨论（Discussions）：https://github.com/weiyuan0917-a11y/longport-openclaw/discussions
+
+- 问题反馈（Issues）：<https://github.com/weiyuan0917-a11y/longport-openclaw/issues>
+- 交流讨论（Discussions）：<https://github.com/weiyuan0917-a11y/longport-openclaw/discussions>
+
 如果你遇到问题，建议在 Issue 中提供：
+
 - 运行环境（系统 / Python / Node 版本）
 - 复现步骤
 - 相关日志或截图（请先打码敏感信息）
+
 ---
+
 ## 联系方式
+
 - 邮箱：weiyuan_917@qq.com
-- 微信&QQ（仅合作沟通，支持定制服务）：178522360
+- 微信/QQ（仅合作沟通，支持定制服务）：178522360
 
 
 
