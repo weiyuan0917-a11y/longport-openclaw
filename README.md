@@ -1,7 +1,12 @@
-# LongPort OpenClaw (Open Source Edition)
+# LongPort（长桥证券）—OpenClaw (Open Source Edition)
 
-一个面向 US/HK/CN 市场的量化研究与交易控制台。  
+目前针对长桥证券面向 US/HK/CN 市场的量化研究与交易控制台。  
 支持市场分析、策略回测、自动交易、通知与配置管理。
+
+##它支持两种使用方式：
+
+可视化 UI 模式：在网页中完成配置、分析、回测、信号扫描、下单、通知管理
+智能体 MCP 模式：让 OpenClaw/Claude 等智能体通过 MCP 工具调用交易能力
 
 > Warning: 本项目为研究与工程框架，不构成投资建议。
 
@@ -9,12 +14,31 @@
 
 ## 功能概览
 
-- 多市场总览与市场分析（情绪、宏观、板块轮动）
-- 回测与参数对比（支持多周期 K 线）
-- AutoTrader（半自动/全自动/演练模式）
-- 风控与执行控制（冷却、同标的限制、日内次数等）
-- 通知与观察模式（支持飞书消息推送）
-- 配置快照、导入导出、回滚
+### 1.1 市场与策略
+
+- 多市场观察（A 股 / 港股 / 美股）
+- 市场分析（情绪、宏观、板块轮动、数据状态标识）
+- 多策略回测（支持不同 K 线周期）
+- AutoTrader 扫描强势股并做策略评分
+- 策略模板化（趋势 / 均值回归 / 防守）
+
+### 1.2 交易与风控
+
+- 手动交易：下单、撤单、持仓与订单状态查看
+- 期权交易：到期日/期权链查询、单腿/多腿下单、费用试算、订单与持仓查看
+- 半自动交易：生成待确认信号，人工确认执行
+- 全自动交易：扫描后自动下单（可开关）
+- 风控约束：仓位、交易频次、冷却、同标的限制等
+- 新增限制：**美股仅允许盘前/盘中/盘后下单，夜盘禁止下单**
+- MCP 分级授权：期权下单归属 L3，支持 `confirmation_token` 校验
+
+### 1.3 自动化与通知
+
+- 飞书机器人（WebSocket 长连接，无需公网 IP）
+- 定时市场报告、交易事件推送
+- 观察模式提示（连续无信号时给出原因和建议）
+- 配置导入导出、快照备份与回滚
+- Setup 页面支持“一键停止前后端服务”
 
 ---
 
@@ -147,3 +171,23 @@ npm run dev
 - [LongPort OpenAPI](https://open.longportapp.com/)
 - [Model Context Protocol](https://github.com/modelcontextprotocol)
 
+- ## 项目截图
+> 界面会随版本迭代，截图仅供参考。
+![总览 Dashboard](./docs/images/dashboard.png)
+![市场分析](./docs/images/market-analysis.png)
+![自动交易 AutoTrader](./docs/images/auto-trader.png)
+![自动交易 AutoTrader](./docs/images/Backtest.png)
+![自动交易 AutoTrader](./docs/images/Options.png)
+![自动交易 AutoTrader](./docs/images/Research.png)
+---
+## 社区与支持
+- 问题反馈（Issues）：https://github.com/weiyuan0917-a11y/longport-openclaw/issues
+- 交流讨论（Discussions）：https://github.com/weiyuan0917-a11y/longport-openclaw/discussions
+如果你遇到问题，建议在 Issue 中提供：
+- 运行环境（系统 / Python / Node 版本）
+- 复现步骤
+- 相关日志或截图（请先打码敏感信息）
+---
+## 联系方式
+- 邮箱：weiyuan_917@qq.com
+-
